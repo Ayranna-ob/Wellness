@@ -9,10 +9,9 @@ body {
 }
 
 .nav-logo img {
-    width: auto;
-    height: 145px;
+    display: flex;
+    align-items: center;
 }
-
 
 .navbar {
     display: flex;
@@ -26,6 +25,12 @@ body {
     top: 0;
     left: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 95px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
 }
 
 .navbar h1 {
