@@ -1,0 +1,128 @@
+.breathing-page {
+    padding-top: 100px;
+    background: linear-gradient(90deg, #a1c4fd 0%, #fbc2eb 100%);
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 60px;
+}
+
+
+
+.breathing-container {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 40px;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.breathing-intro {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.breathing-circle {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    transition: transform 5s ease-in-out;
+}
+
+
+.breathing-circle.inhale {
+    transform: scale(1.5);
+}
+
+.breathing-circle.exhale {
+    transform: scale(1);
+}
+
+
+.breathing-circle.inhale {
+    transform: scale(1.5);
+}
+
+.breathing-circle.exhale {
+    transform: scale(1);
+}
+
+.phase-text {
+    color: white;
+}
+
+.breathing-note, .breathing-count {
+    font-size: 16px;
+    margin: 10px 0;
+    opacity: 0.85;
+}
+
+.instructions {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fefefe;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.instructions ul {
+    padding-left: 20px;
+    line-height: 1.8;
+    font-size: 16px;
+    list-style-type: disc;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 18px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    font-size: 15px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+

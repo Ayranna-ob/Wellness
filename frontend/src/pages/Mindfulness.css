@@ -1,0 +1,160 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #63BABE, #DCB2EE);
+    color: #fff;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo img {
+    height: 50px;
+    object-fit: contain;
+}
+
+.mindfulness-page {
+    padding: 120px 20px 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mindfulness-page h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.mindfulness-page p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+}
+
+.exercise-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.exercise-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.exercise-item:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-8px);
+}
+
+.exercise-item h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.exercise-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #f3f3f3;
+}
+
+.exercise-item button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background: #FFC857;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.exercise-item button:hover {
+    background: #E6A700;
+    transform: scale(1.05);
+}
+
+.exercise-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Timer Component */
+.timer {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 360px;
+    margin: 40px auto;
+}
+
+.timer h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #FFC857;
+}
+
+.timer button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background: #63BABE;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.timer button:hover {
+    background: #559ea1;
+    transform: scale(1.05);
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-3px);
+}

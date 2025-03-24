@@ -1,0 +1,95 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #63BABE, #DCB2EE);
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 95px;
+}
+
+.hero {
+    text-align: center;
+    padding: 180px 20px 60px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.create-btn {
+    background: #FFC857;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.create-btn:hover {
+    background: #E6A700;
+    transform: scale(1.05);
+}
+
+.login-btn {
+    background: white;
+    color: #63BABE;
+    border: none;
+    font-size: 20px;
+}
+
+.login-btn:hover {
+    background: #B6E6E6;
+    transform: scale(1.05);
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
