@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 node_modules/
 .env
 .DS_Store
@@ -31,3 +32,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 >>>>>>> 48613ab (Added frontend project)
+=======
+.DS_Store
+.idea/
+*.save
+* 2.*
+node_modules/
+>>>>>>> 253103c (Add .gitignore and remove unnecessary files)
