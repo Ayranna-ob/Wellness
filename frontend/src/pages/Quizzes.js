@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './Quizzes.css';
@@ -52,14 +51,18 @@ const Quizzes = () => {
     const handleAnswer = () => {
         if (selectedOption === null) return;
 
-        if (selectedOption === quizQuestions[currentQuestion].answer) {
-            setScore(score + 1);
+        const isCorrect = selectedOption === quizQuestions[currentQuestion].answer;
+        if (isCorrect) {
+            setScore(prev => prev + 1);
         }
 
         if (currentQuestion < quizQuestions.length - 1) {
-            setCurrentQuestion(currentQuestion + 1);
+            setCurrentQuestion(prev => prev + 1);
             setSelectedOption(null);
         } else {
+            const finalScore = isCorrect ? score + 1 : score;
+            localStorage.setItem('quizScore', finalScore);
+            setScore(finalScore);
             setShowResults(true);
         }
     };
@@ -70,9 +73,16 @@ const Quizzes = () => {
         return "Consider exploring some wellness resources or talking to someone you trust.";
     };
 
+    const restartQuiz = () => {
+        setCurrentQuestion(0);
+        setSelectedOption(null);
+        setScore(0);
+        setShowResults(false);
+        localStorage.removeItem('quizScore');
+    };
+
     return (
         <div className="quiz-page">
-
             <nav className="navbar">
                 <div className="nav-logo">
                     <Link to="/">
@@ -89,6 +99,9 @@ const Quizzes = () => {
                     <div className="results">
                         <h2>Your Score: {score} / {quizQuestions.length}</h2>
                         <p>{getFeedback()}</p>
+                        <button className="submit-btn" onClick={restartQuiz}>
+                            Restart Quiz
+                        </button>
                     </div>
                 ) : (
                     <>
@@ -97,8 +110,8 @@ const Quizzes = () => {
                             {quizQuestions[currentQuestion].options.map((option, index) => (
                                 <li
                                     key={index}
-                                    className={selectedOption === index ? 'selected' : ''}
-                                    onClick={() => setSelectedOption(index)}
+                                    className={selectedOption === option ? 'selected' : ''}
+                                    onClick={() => setSelectedOption(option)}
                                 >
                                     {option}
                                 </li>

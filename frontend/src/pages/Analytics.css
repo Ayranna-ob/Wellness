@@ -1,0 +1,90 @@
+.analytics-page {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.analytics-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.progress-block {
+    margin: 30px 0;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #28a745;
+    width: 0;
+    transition: width 0.5s ease;
+}
+
+.progress-fill.quiz {
+    background-color: #007bff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo img {
+    height: 50px;
+    object-fit: contain;
+}
+
+.logout-btn {
+    background: #FFC857;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background: #E6A700;
+    transform: scale(1.05);
+}
+
+.back-button {
+    margin-top: 40px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-3px);
+}

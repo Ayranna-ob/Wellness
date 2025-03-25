@@ -1,0 +1,136 @@
+.fitness-container {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.fitness-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.fitness-form input,
+.fitness-form button {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.fitness-form button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.progress-section {
+    margin-bottom: 2rem;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #28a745;
+    width: 0;
+    transition: width 0.5s ease;
+}
+
+.log-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.log-section li {
+    margin-bottom: 0.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo img {
+    height: 50px;
+    object-fit: contain;
+}
+
+.logout-btn {
+    background: #FFC857;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.logout-btn:hover {
+    background: #E6A700;
+    transform: scale(1.05);
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-3px);
+}
+
+.reset-btn {
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.reset-btn:hover {
+    background-color: #e0a800;
+}
