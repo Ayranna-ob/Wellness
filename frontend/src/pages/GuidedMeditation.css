@@ -9,20 +9,10 @@
     align-items: center;
 }
 
-
-.meditation-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px 20px;
+.meditation-script {
+    padding-top: 120px;
     text-align: center;
-    background: none !important;
-    box-shadow: none !important;
-    border: none;
-    border-radius: 0;
-    backdrop-filter: none;
 }
-
-
 
 .meditation-intro {
     font-size: 18px;

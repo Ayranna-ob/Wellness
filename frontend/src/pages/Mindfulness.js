@@ -14,7 +14,7 @@ const Mindfulness = () => {
     return (
         <div className="mindfulness-page">
 
-            {/* Navbar */}
+
             <nav className="navbar">
                 <div className="nav-logo">
                     <Link to="/">
@@ -27,7 +27,7 @@ const Mindfulness = () => {
             <h1>Mindfulness Exercises</h1>
             <p>Explore the exercises below to boost your mental wellbeing:</p>
 
-            {/* Exercise Cards */}
+
             <div className="exercise-list">
                 <div className="exercise-item">
                     <h2>Breathing Exercise</h2>
@@ -56,7 +56,7 @@ const Mindfulness = () => {
 
 
             <button className="back-button" onClick={() => navigate('/Profile')}>
-                Back
+                ← Back
             </button>
         </div>
     );

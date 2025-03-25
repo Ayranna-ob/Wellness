@@ -1,0 +1,104 @@
+.reflection-page {
+    min-height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    z-index: 1000;
+}
+
+.nav-logo img {
+    width: auto;
+    height: 120px;
+    margin-left: 15px;
+}
+.logout-btn {
+    background: #FFC857;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background: #E6A700;
+    transform: scale(1.05);
+}
+
+
+.back-button {
+    background-color: #ffffff33;
+    backdrop-filter: blur(10px);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #ffffff55;
+    transform: scale(1.05);
+}
+
+.reflection-content {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+
+.reflection-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+.reflection-content h2 {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.reflection-content p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.reflection-content em {
+    display: block;
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 16px;
+}

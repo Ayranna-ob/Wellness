@@ -1,4 +1,4 @@
-/* General Page Styling */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     background-color: #f8f9fa;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@ body {
     cursor: pointer;
 }
 
-/* Banner */
+
 .banner {
     width: 80%;
     height: 200px;
@@ -39,7 +39,7 @@ body {
     border-radius: 10px;
 }
 
-/* Info Box */
+
 .info-box {
     background-color: white;
     padding: 20px;
