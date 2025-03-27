@@ -1,3 +1,15 @@
+# Wellness Web Application 
+
+This is my final-year university project focused on promoting employee wellbeing through an interactive web application. 
+Built using React.js, the app features:
+- Breathing exercises
+- Guided meditations
+- Reflection tips
+- Mental health quizzes
+- Progress tracking
+
+This project was developed as part of the COMP6013 BSc Computing Project module at Oxford Brookes University.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
